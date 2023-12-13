@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="db.js"></script>
+
+</head>
+<body>
+  <button onclick="getItems()">SHOW ME THE ITEMS</button>
+  <us id="itemsList">
+
+  </us>
+</body>
+</html>
+
+
+<!-- Fake APIs quickly without coding 
+    supporting GET POST PUT DELETE -->
+
+
+<!-- Make "db.json" file -->
+<!-- Run npm init -y -->
+<!-- Run npm install json-server -->
+<!-- Run json-server --watch db.json -->
+
+<!-- fixing not not running:
+Press the Windows key.
+Type "PowerShell".
+Right-click on "Windows PowerShell" in the search results.
+Select "Run as administrator."
+Confirm any prompts asking for permission to run PowerShell as an administrator.
+Run the Set-ExecutionPolicy RemoteSigned command. -->
+
+
+
+
+
+<!-- GET item - /id -->
+<!-- filter by key - ?key=value -->
+<!-- filter by keys - ?key=value&?key=value&?key=value... -->
+<!-- Nested jason key=key.value -->
+<!-- Sort by key - ?_sort=key -->
+<!-- Reverse ?_sort=key&_order=desc -->
+<!-- Second order for equal values on the first order - ?_sort=key,onotherKey -->
+<!-- Second order + Reverse - ?_sort=key,onotherKey&_order=desc,asc -->
+<!-- desc = reverse, asc - not reverse. -->
+<!-- Pagination by default 10 items in a page - ?_page=number -->
+<!-- Pagination with a spesific nuber of items - ?_page=number&_limit=number -->
+<!-- on inspect - Networkig - headers - Link - there is first, next and last -->
+<!-- Filter - ?key_gte=number -->
+<!-- gte = equal or greater than, lte = equal or less than -->
+<!-- Second Filter - ?key_gte=number&anotherKey_gte=number... -->
+<!-- ne = not equal -->
+<!-- everything except.. -  ?key_ne=value -->
+<!-- Free text search - ?q=text -->
+
+
+<!-- install extenstion - thunder client or use Postman body-raw-json -->
+
+
