@@ -12,6 +12,10 @@
 let seconds = 0
 
 const startCounting = () => {
+  const buttonStart = document.getElementById("buttonStart")
+  buttonStart.setAttribute("disabled", true)
+
+
   // GETTING THE OBJECT FROM THE HTML IF THE COUNTER DISPLAY
   const counterDisplay = document.getElementById("counterDisplay")
 
@@ -37,6 +41,7 @@ const startCounting = () => {
     // WHEN TO STOP THE LOOP
     if (seconds == -1){
       clearInterval(intervalId)
+      buttonStart.removeAttribute("disabled")
     }
 
   }, 1000);
