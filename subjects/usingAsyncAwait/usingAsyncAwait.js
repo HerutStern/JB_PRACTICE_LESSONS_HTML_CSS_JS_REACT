@@ -7,29 +7,46 @@
 
 url = "https://api.chucknorris.io/jokes/random"
 
-const getJoke = async() => {
-    const getButton = document.getElementById('getButton')
-    getButton.setAttribute("disabled", true)
 
-  try{
-      const response = await fetch(url)
-      if (response.status === 200) {
-        const jsonData = await response.json()
-        const jokeTextElement = document.getElementById('joke')
-        jokeTextElement.innerText = jsonData.value
-      } else {
-        throw 'error'
-      }
-  } catch(error) {
-      const jokeTextElement = document.getElementById('joke')
-      jokeTextElement.innerText = 'ERROR'
-      console.log(error)
-  } finally {
-      const getButton = document.getElementById('getButton')
-      getButton.removeAttribute("disabled")
-  }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const getJoke = async() => {
+//     const getButton = document.getElementById('getButton')
+//     getButton.setAttribute("disabled", true)
+
+//   try{
+//       const response = await fetch(url)
+//       if (response.status === 200) {
+//         const jsonData = await response.json()
+//         const jokeTextElement = document.getElementById('joke')
+//         jokeTextElement.innerText = jsonData.value
+//       } else {
+//         throw 'error'
+//       }
+//   } catch(error) {
+//       const jokeTextElement = document.getElementById('joke')
+//       jokeTextElement.innerText = 'ERROR'
+//       console.log(error)
+//   } finally {
+//       const getButton = document.getElementById('getButton')
+//       getButton.removeAttribute("disabled")
+//   }
+
+// }
 
 
 
